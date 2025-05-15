@@ -475,3 +475,397 @@ header {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.about_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 90px;
+}
+.about_products {
+  margin-bottom: 92px;
+}
+
+.about_card {
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  padding: 40px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(128, 128, 128, 0.2);
+  justify-content: space-between;
+}
+.about_card:first-child {
+  border-left: none;
+}
+
+.about_card p {
+  /* Body Bold/Desktop */
+  color: rgb(255, 255, 255);
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.about_card span {
+  /* Body/Desktop */
+  color: rgb(255, 255, 255);
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.community {
+  position: relative;
+}
+.left_gr {
+  width: 800px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
+}
+.right_gr {
+  width: 800px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(270.00deg, rgb(0, 0, 0),rgba(0, 0, 0, 0) 100%);
+}
+.community_top {
+  position: relative;
+  z-index: 2;
+}
+
+.community_top h2 {
+  /* H3/Desktop */
+  color: rgb(255, 255, 255);
+
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 90%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.socials a {
+  height: 64px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* Black */
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials a:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.socials p {
+  /* Button/Desktop */
+  color: rgb(255, 255, 255);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.community_gallery {
+  margin-top: -124px;
+}
+.community_gallery img {
+  width: 100%;
+}
+
+.community {
+  padding-bottom: 160px;
+  margin-bottom: 96px;
+}
+
+.get_offer {
+  margin-bottom: 96px;
+  background: url(../assets/images/offer-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 104px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.offer_block {
+  padding: 60px 40px 60px 40px;
+  width: 644px;
+  height: 976px;
+  backdrop-filter: blur(50px);
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.offer_block h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 90%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.offer_block p {
+  /* Body/Desktop */
+  color: rgb(255, 255, 255);
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.offer_block button {
+  width: 224px;
+  height: 64px;
+  border: 1px solid rgb(163, 133, 235);
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+.faq {
+  padding-top: 72px;
+  padding-bottom: 122px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.faq_left {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.faq_left h2 {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.faq_btm p {
+  color: rgb(128, 128, 128);
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.faq_btm button {
+  width: 366px;
+  justify-content: space-between;
+}
+
+.faq_right {
+  width: 77%;
+}
+
+.faq_item {
+  padding: 32px 24px 32px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.faq_title p {
+  color: rgb(78, 78, 78);
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.faq_btn {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 56px;
+  height: 56px;
+  background: transparent;
+}
+.faq_desc {
+  width: 91%;
+  padding-top: 32px;
+}
+
+.faq_desc p {
+  color: rgb(255, 255, 255);
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.close_btn {
+  display: none;
+}
+
+.faq_desc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 0;
+}
+
+.faq_item.active .faq_desc {
+  max-height: 500px;
+  padding: 10px 0;
+}
+
+.faq_btn .close_btn {
+  display: none;
+}
+.faq_item.active .faq_btn {
+  background: rgb(255, 255, 255);
+}
+.faq_item.active .faq_btn .open_btn {
+  display: none;
+}
+
+.faq_item.active .faq_btn .close_btn {
+  display: inline;
+}
+
+.faq_item.active .faq_title p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+
+.footer_wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.support {
+  background: url(../assets/images/support-bg.png);
+  background-position: center;
+  background-size: cover;
+  height: 820px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support p {
+  color: rgb(255, 255, 255);
+  font-size: 110px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer_content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_left {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.footer_menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer_menu p {
+  /* Button/Desktop */
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.footer_right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer_right .sign_btn {
+  width: 176px;
+  justify-content: space-between;
+}
+
+.footer_btm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_btm p {
+  color: rgb(78, 78, 78);
+  font-family: IBM Plex Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.footer_logo img {
+  width: 185.32px;
+}
