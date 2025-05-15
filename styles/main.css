@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@font-face {
+  font-family: "DrukWide";
+  src: url("../assets/fonts/Druk-Wide-Cyr.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  font-family: "DrukWide", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: 0;
+}
+
+button {
+  cursor: pointer;
+  font-family: "DrukWide";
+  border: none;
+  transition: all 0.4s ease;
+}
+
+.main_btn {
+  height: 64px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+
+  color: rgb(255, 255, 255);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav_wrapper {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 155px;
+}
+
+.nav_menu {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_menu a {
+  width: 286px;
+}
+
+.nav_menu a p {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.lang_btn {
+  width: 64px;
+  height: 64px;
+  padding: 0;
+}
+
+.colored_btn {
+  border: 1px solid rgb(163, 133, 235);
+  color: rgb(163, 133, 235);
+}
+.sign_btn {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+}
+
+.nav_right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav {
+  margin-bottom: 593px;
+  position: relative;
+  z-index: 2;
+}
+header {
+  position: relative;
+  padding-bottom: 40px;
+  margin-bottom: 96px;
+}
+
+.header_bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.header_bg img {
+  width: 1100px;
+}
+
+.header_content {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.block_title h2 {
+  /* H1/Desktop */
+  color: rgb(255, 255, 255);
+
+  font-size: 112px;
+  font-weight: 500;
+  line-height: 90%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.block_top p {
+  /* Subtitle/Desktop */
+  color: rgb(128, 128, 128);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.header_text {
+  margin: 24px 0 66px;
+}
+
+.header_text p {
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+.header_text p span {
+  color: rgb(163, 133, 235);
+}
+
+.header_partners {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  height: 112px;
+}
+
+.header_partners_list {
+  display: flex;
+  align-items: center;
+  padding: 0 21px;
+  padding-left: 37px;
+}
+.header_partners_list img {
+  margin-left: -16px;
+}
+
+.plus {
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  box-sizing: border-box;
+  /* Black */
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 1000px;
+
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -16px;
+}
+.plus img {
+  margin: 0;
+}
+
+.partners_amount {
+  padding: 0px 32px 0px 32px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.partners_amount p {
+  color: rgb(255, 255, 255);
+  font-size: 21.33px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.partners_amount span {
+  color: rgb(128, 128, 128);
+  font-family: IBM Plex Mono;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.join_btn {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  /* White */
+  background: rgb(255, 255, 255);
+  height: 100%;
+  cursor: pointer;
+  padding: 0px 32px 0px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join_btn p {
+  /* Button/Desktop */
+  color: rgb(0, 0, 0);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.why_choose {
+  padding: 100px 0;
+  margin-bottom: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url(../assets/images/why-choose-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.why_choose .block_title h2 {
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.choose_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.choose_right_wrapper {
+  width: 480px;
+  height: 776px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1400px;
+}
+.circle {
+  width: 480px;
+  height: 480px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1000px;
+
+  /* White */
+  background: rgb(255, 255, 255);
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.circle p {
+  color: rgb(0, 0, 0);
+  margin-bottom: 24px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.circle span {
+  color: rgb(120, 120, 120);
+  font-family: IBM Plex Mono;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.center p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sources_grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.sources_card {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* Black */
+  background: rgb(0, 0, 0);
+  transition: all 0.4s ease;
+}
+.sources_card:hover {
+  transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sources_card p {
+  color: rgb(255, 255, 255);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sources {
+  padding-bottom: 96px;
+}
+
+.roadmap {
+  padding-top: 160px;
+  padding-bottom: 142px;
+  margin-bottom: 96px;
+}
+.roadmap_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.roadmap_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.roadmap_card {
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  height: 450px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s ease;
+}
+
+.roadmap_card:hover {
+  transition: all 0.4s ease;
+  background: rgb(163, 133, 235);
+}
+
+.roadmap_card h3 {
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.roadmap_card:hover h3 {
+  transition: all 0.4s ease;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.roamap_link {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.roamap_link p {
+  color: rgb(255, 255, 255);
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.roadmp_link {
+  display: none;
+}
+
+.roadmp_link div {
+  /* White */
+  background: rgb(255, 255, 255);
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roadmap_card:hover .roadmp_link {
+  display: flex;
+}
+
+.roadmap_grid .roadmap_card:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
