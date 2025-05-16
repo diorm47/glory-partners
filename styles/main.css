@@ -69,13 +69,19 @@ button {
   padding: 24px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+.nav_line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+
+  background: rgb(255, 255, 255);
 }
 
-.nav_menu a {
+.nav_menu p {
   width: 286px;
-}
-
-.nav_menu a p {
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 500;
@@ -83,6 +89,7 @@ button {
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .lang_btn {
@@ -833,7 +840,7 @@ header {
   gap: 24px;
 }
 .footer_menu p {
-  /* Button/Desktop */
+  cursor: pointer;
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 500;

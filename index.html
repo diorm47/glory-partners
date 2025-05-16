@@ -15,9 +15,10 @@
               <img src="./assets/logo.svg" alt="" />
             </a>
             <div class="nav_menu">
-              <a href="#"><p>Product</p></a>
-              <a href="#"><p>About</p></a>
-              <a href="#"><p>Contacts</p></a>
+              <div class="nav_line"></div>
+              <p class="scrollBtn" data-target="#product">Product</p>
+              <p class="scrollBtn" data-target="#about">About</p>
+              <p class="scrollBtn" data-target="#contacts">Contacts</p>
             </div>
           </div>
           <div class="nav_right">
@@ -175,7 +176,7 @@
       </div>
     </section>
 
-    <section class="products container">
+    <section class="products container" id="product">
       <div class="products_top container">
         <div class="block_top">
           <p>| our products |</p>
@@ -208,7 +209,7 @@
       </div>
     </section>
 
-    <section class="about_products">
+    <section class="about_products" id="about">
       <div class="block_top container">
         <p>| about our products |</p>
       </div>
@@ -276,10 +277,26 @@
         </div>
       </div>
       <div class="gambling">
-        <img class="gamble_1" src="./assets/icons/gamble-corners/1.svg" alt="">
-        <img class="gamble_2" src="./assets/icons/gamble-corners/2.svg" alt="">
-        <img class="gamble_3" src="./assets/icons/gamble-corners/3.svg" alt="">
-        <img class="gamble_4" src="./assets/icons/gamble-corners/4.svg" alt="">
+        <img
+          class="gamble_1"
+          src="./assets/icons/gamble-corners/1.svg"
+          alt=""
+        />
+        <img
+          class="gamble_2"
+          src="./assets/icons/gamble-corners/2.svg"
+          alt=""
+        />
+        <img
+          class="gamble_3"
+          src="./assets/icons/gamble-corners/3.svg"
+          alt=""
+        />
+        <img
+          class="gamble_4"
+          src="./assets/icons/gamble-corners/4.svg"
+          alt=""
+        />
         <p>
           Gambling <br />
           X betting
@@ -477,7 +494,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer id="contacts">
       <div class="footer_wrapper container">
         <div class="support">
           <a href="mailto:support@glory.bet"><p>support@glory.bet</p></a>
@@ -489,9 +506,9 @@
             /></a>
 
             <div class="footer_menu">
-              <a href="#"><p>Product</p></a>
-              <a href="#"><p>About</p></a>
-              <a href="#"><p>Contacts</p></a>
+          <p class="scrollBtn" data-target="#product">Product</p>
+              <p class="scrollBtn" data-target="#about">About</p>
+              <p class="scrollBtn" data-target="#contacts">Contacts</p>
             </div>
           </div>
           <div class="footer_right">
@@ -504,7 +521,7 @@
             <button class="main_btn lang_btn">
               <img src="./assets/icons/socials/yt.svg" alt="" />
             </button>
-            <button class="main_btn sign_btn">
+            <button class="main_btn sign_btn" id="scrollToTopBtn">
               Up <img src="./assets/icons/top.svg" alt="" />
             </button>
           </div>
