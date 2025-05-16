@@ -108,14 +108,18 @@ button {
 }
 
 nav {
-  margin-bottom: 593px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
   z-index: 2;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
 }
 header {
   position: relative;
   padding-bottom: 40px;
   margin-bottom: 96px;
+  padding-top: 750px;
 }
 
 .header_bg {
@@ -539,7 +543,7 @@ header {
   position: absolute;
   right: 0;
   top: 0;
-  background: linear-gradient(270.00deg, rgb(0, 0, 0),rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(270deg, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
 }
 .community_top {
   position: relative;
@@ -868,4 +872,186 @@ header {
 
 .footer_logo img {
   width: 185.32px;
+}
+
+.products {
+  padding-bottom: 160px;
+  margin-bottom: 96px;
+}
+.products_top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 148px;
+}
+.products_top h2 {
+  color: rgb(128, 128, 128);
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.product_item {
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 56px 0px 56px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product_item h3 {
+  color: rgb(128, 128, 128);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.product_item_right {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product_item_right h4 {
+  color: rgb(255, 255, 255);
+  font-family: IBM Plex Mono;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.white_btn {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  gap: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.countries {
+  padding-top: 164px;
+  padding-bottom: 412px;
+  background: url(../assets/images/About.png);
+  background-position: center;
+  background-size: cover;
+}
+.countries .block_top {
+  margin-bottom: 90px;
+}
+.countries_content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.countries_text p {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.3;
+  filter: blur(3px);
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.payments {
+  display: flex;
+  align-items: start;
+}
+.payment_item {
+  width: 176px;
+  height: 176px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Black */
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.payment_item:hover {
+  transition: all 0.4s ease;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../assets/images/payment-bg.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.payment_item_high {
+  width: 235px;
+  height: 339px;
+}
+
+.hidden_v {
+  visibility: hidden;
+}
+.hidden_vs {
+  height: 162px;
+}
+.mc_card {
+  border-left: none;
+  border-bottom: none;
+}
+
+.gambling {
+  width: 100%;
+  max-width: 584px;
+  margin: 0 auto;
+  padding: 32px;
+  position: relative;
+  margin-top: -120px;
+}
+.gambling p {
+  /* H4/Desktop */
+  color: rgb(255, 255, 255);
+  margin-bottom: 60px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.gambling span {
+  /* Body/Desktop */
+  color: rgb(128, 128, 128);
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.gambling img {
+  position: absolute;
+}
+.gamble_1 {
+  top: 0;
+  left: 0;
+}
+.gamble_2 {
+  top: 0;
+  right: 0;
+}
+.gamble_3 {
+  bottom: 0;
+  left: 0;
+}
+.gamble_4 {
+  bottom: 0;
+  right: 0;
 }
