@@ -299,11 +299,13 @@ header {
 }
 
 .choose_right {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 40px; */
+  width: 100%;
+  height: 100%;
 }
 .choose_right_wrapper {
   width: 480px;
@@ -313,6 +315,10 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 1400px;
+}
+.choose_right .swiper-slide {
+  width: 480px !important;
+  height: 480px !important;
 }
 .circle {
   width: 480px;
@@ -363,7 +369,14 @@ header {
   grid-template-columns: repeat(6, 1fr);
 }
 
+.sources_grid {
+  width: 100%;
+}
+.sources_grid .swiper-slide {
+  width: 300px !important;
+}
 .sources_card {
+  width: 100%;
   display: flex;
   align-items: center;
   height: 300px;
@@ -407,17 +420,38 @@ header {
   justify-content: space-between;
   margin-bottom: 90px;
 }
+.roadmap_title h2 {
+  /* H2/Desktop */
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  text-transform: uppercase;
+  opacity: 0.5;
+  filter: blur(2px);
+}
 
 .roadmap_grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
-
+.roadmap_grid_top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.roadmap_grid_top .roadmap_card {
+  width: 32.5%;
+}
 .roadmap_card {
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.03);
   height: 450px;
   padding: 40px;
@@ -490,6 +524,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 90px;
+  gap: 24px;
 }
 .about_products {
   margin-bottom: 92px;
@@ -497,26 +532,32 @@ header {
 
 .about_card {
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px;
-  height: 420px;
+  height: 584px;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid rgba(128, 128, 128, 0.2);
+
   justify-content: space-between;
 }
-.about_card:first-child {
-  border-left: none;
+.about_card:nth-child(1) {
+  background: url(../assets/images/about-card-1.png);
+  background-size: cover;
+}
+.about_card:nth-child(2) {
+  background: url(../assets/images/about-card-2.png);
+  background-size: cover;
+}
+.about_card:nth-child(3) {
+  background: url(../assets/images/about-card-3.png);
+  background-size: cover;
 }
 
 .about_card p {
-  /* Body Bold/Desktop */
   color: rgb(255, 255, 255);
-  font-family: IBM Plex Mono;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 32px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
@@ -884,6 +925,7 @@ header {
 .products {
   padding-bottom: 160px;
   margin-bottom: 96px;
+  padding-top: 160px;
 }
 .products_top {
   display: flex;
@@ -892,7 +934,7 @@ header {
   margin-bottom: 148px;
 }
 .products_top h2 {
-  color: rgb(128, 128, 128);
+  color: rgb(255, 255, 255);
   font-size: 60px;
   font-weight: 500;
   line-height: 100%;
@@ -960,15 +1002,16 @@ header {
   justify-content: space-between;
 }
 .countries_text p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255);
   opacity: 0.3;
-  filter: blur(3px);
+  filter: blur(4px);
   font-size: 60px;
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
+  transition: opacity 0.5s ease, filter 0.5s ease;
 }
 
 .payments {

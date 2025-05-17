@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glory Partners</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -52,10 +56,11 @@
           </div>
           <div class="header_partners">
             <div class="header_partners_list">
-              <img src="./assets/images/partner.png" alt="" />
-              <img src="./assets/images/partner.png" alt="" />
-              <img src="./assets/images/partner.png" alt="" />
-              <img src="./assets/images/partner.png" alt="" />
+              <img src="./assets/images/partners/partner-1.png" alt="" />
+              <img src="./assets/images/partners/partner-2.png" alt="" />
+              <img src="./assets/images/partners/partner-3.png" alt="" />
+              <img src="./assets/images/partners/partner-4.png" alt="" />
+
               <div class="plus">
                 <img src="./assets/icons/plus.svg" alt="" />
               </div>
@@ -81,13 +86,39 @@
         </h2>
       </div>
       <div class="choose_right_wrapper">
-        <div class="choose_right">
-          <div class="circle"></div>
-          <div class="circle">
-            <p>$25,000</p>
-            <span>Average monthly partner earnings </span>
+        <div class="swiper choose_right">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="circle">
+                <p>$25,000</p>
+                <span>Average monthly partner earnings </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <p>$25,000</p>
+                <span>Average monthly partner earnings </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <p>$25,000</p>
+                <span>Average monthly partner earnings </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <p>$25,000</p>
+                <span>Average monthly partner earnings </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <p>$25,000</p>
+                <span>Average monthly partner earnings </span>
+              </div>
+            </div>
           </div>
-          <div class="circle"></div>
         </div>
       </div>
     </section>
@@ -96,24 +127,69 @@
       <div class="block_top center">
         <p>| our sources |</p>
       </div>
-      <div class="sources_grid">
-        <div class="sources_card">
-          <p>apps</p>
-        </div>
-        <div class="sources_card">
-          <p>ASO</p>
-        </div>
-        <div class="sources_card">
-          <p>UAC</p>
-        </div>
-        <div class="sources_card">
-          <p>SEO</p>
-        </div>
-        <div class="sources_card">
-          <p>PPC</p>
-        </div>
-        <div class="sources_card">
-          <p>FB</p>
+
+      <div class="swiper sources_grid">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>apps</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>ASO</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>UAC</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>SEO</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>PPC</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>FB</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>apps</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>ASO</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>UAC</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>SEO</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>PPC</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sources_card">
+              <p>FB</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -121,14 +197,10 @@
     <section class="roadmap container">
       <div class="roadmap_top">
         <div class="block_top">
-          <p>| Easy way to start earnings |</p>
-        </div>
-        <div class="block_top">
           <p>| How it works |</p>
         </div>
       </div>
-
-      <div class="roadmap_grid">
+      <div class="roadmap_grid_top">
         <div class="roadmap_card">
           <h3>01</h3>
           <div class="roamap_link">
@@ -140,6 +212,20 @@
             </a>
           </div>
         </div>
+        <div class="roadmap_title">
+          <h2>
+            Easy way to <br />
+            start earnings
+          </h2>
+          <br />
+          <br />
+          <h2>
+            with Glory <br />
+            Partners
+          </h2>
+        </div>
+      </div>
+      <div class="roadmap_grid">
         <div class="roadmap_card">
           <h3>02</h3>
           <div class="roamap_link">
@@ -172,6 +258,29 @@
               </div>
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about_products container" id="about">
+      <div class="block_top">
+        <p>| about our products |</p>
+      </div>
+      <div class="about_grid">
+        <div class="about_card">
+          <p>Regular participation in exhibitions and conferences</p>
+          <span>2 products In-house </span>
+        </div>
+        <div class="about_card">
+          <p>
+            Best advertiser ”Gambling” <br />
+            KINZA AWARDS 2023
+          </p>
+          <span>Payouts Every 7 days</span>
+        </div>
+        <div class="about_card">
+          <p>Individual conditions</p>
+          <span>24/7 Support</span>
         </div>
       </div>
     </section>
@@ -209,26 +318,22 @@
       </div>
     </section>
 
-    <section class="about_products" id="about">
-      <div class="block_top container">
-        <p>| about our products |</p>
-      </div>
-      <div class="about_grid">
-        <div class="about_card">
-          <p>Regular participation in exhibitions and conferences</p>
-          <span>2 products In-house </span>
-        </div>
-        <div class="about_card">
-          <p>
-            Best advertiser ”Gambling” <br />
-            KINZA AWARDS 2023
-          </p>
-          <span>Payouts Every 7 days</span>
-        </div>
-        <div class="about_card">
-          <p>Individual conditions</p>
-          <span>24/7 Support</span>
-        </div>
+    <section class="get_offer">
+      <div class="offer_block">
+        <h2>
+          Get an <br />
+          offer and <br />
+          let's <br />
+          make money <br />
+          $$$
+        </h2>
+        <p>
+          Fill out the form, recieve an offer and recommendations from
+          aff manager for quality spillage
+        </p>
+        <button class="main_btn sign_btn">
+          Sign Up <img src="./assets/icons/link-dark.svg" alt="" />
+        </button>
       </div>
     </section>
 
@@ -238,18 +343,17 @@
       </div>
       <div class="countries_content container">
         <div class="countries_text">
-          <p>
-            We work in <br />
-            countries such as <br />
-            Bangladesh, <br />
-            Azerbaijan, <br />
-            Turkey, Pakistan, <br />
-            offering <br />
-            convenient and <br />
-            fast payment <br />
-            methods
-          </p>
+          <p>We work in</p>
+          <p>countries such as</p>
+          <p>Bangladesh,</p>
+          <p>Azerbaijan,</p>
+          <p>Turkey, Pakistan,</p>
+          <p>offering</p>
+          <p>convenient and</p>
+          <p>fast payment</p>
+          <p>methods</p>
         </div>
+
         <div class="payments">
           <div class="payment_column">
             <div class="payment_item">
@@ -325,25 +429,6 @@
         <img src="./assets/images/community-gallery-img.png" alt="" />
       </div>
       <div class="right_gr"></div>
-    </section>
-
-    <section class="get_offer">
-      <div class="offer_block">
-        <h2>
-          Get an <br />
-          offer and <br />
-          let's <br />
-          make money <br />
-          $$$
-        </h2>
-        <p>
-          Fill out the form, recieve an offer and recommendations from
-          aff manager for quality spillage
-        </p>
-        <button class="main_btn sign_btn">
-          Sign Up <img src="./assets/icons/link-dark.svg" alt="" />
-        </button>
-      </div>
     </section>
 
     <section class="faq container">
@@ -499,14 +584,14 @@
         <div class="support">
           <a href="mailto:support@glory.bet"><p>support@glory.bet</p></a>
         </div>
-        <div class="footer_content">
+        <!-- <div class="footer_content">
           <div class="footer_left">
             <a href="./index.html" class="footer_logo"
               ><img src="./assets/logo.svg" alt=""
             /></a>
 
             <div class="footer_menu">
-          <p class="scrollBtn" data-target="#product">Product</p>
+              <p class="scrollBtn" data-target="#product">Product</p>
               <p class="scrollBtn" data-target="#about">About</p>
               <p class="scrollBtn" data-target="#contacts">Contacts</p>
             </div>
@@ -529,10 +614,32 @@
         <div class="footer_btm">
           <p>© glory.bet 2025</p>
           <a href="#"><p>Terms & conditions</p></a>
-        </div>
+        </div> -->
       </div>
     </footer>
 
     <script src="./scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".sources_grid", {
+        loop: true,
+        slidesPerView: 6,
+
+        navigation: false,
+        pagination: false,
+      });
+    </script>
+
+    <script>
+      const swiper2 = new Swiper(".choose_right", {
+        direction: "vertical",
+        loop: true,
+        slidesPerView: "auto",
+        spaceBetween: 40,
+        centeredSlides: true,
+        navigation: false,
+        pagination: false,
+      });
+    </script>
   </body>
 </html>
