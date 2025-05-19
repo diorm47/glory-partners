@@ -1504,7 +1504,7 @@ header {
     padding: 40px 24px 40px 24px;
   }
   .get_offer {
-    padding-top: 250px;
+    padding-top: 280px;
   }
   .offer_block h2 {
     margin-bottom: 24px;
@@ -1708,7 +1708,7 @@ header {
   .community {
     padding-top: 40px;
     padding-bottom: 0;
-    background: url(../assets/images/community-gallery-img-mob.png);
+    background: url(../assets/images/community-gallery-img-mob-2.png);
     background-position: center;
     background-size: cover;
     margin-bottom: 0;

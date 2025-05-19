@@ -37,6 +37,7 @@ window.addEventListener("scroll", () => {
 
   let progress =
     (windowHeight - containerRect.top) / (windowHeight + blockHeight);
+  progress *= 1.7;
   progress = Math.min(Math.max(progress, 0), 1);
 
   const totalLines = lines.length;
@@ -58,24 +59,20 @@ window.addEventListener("scroll", () => {
 });
 window.dispatchEvent(new Event("scroll"));
 
+// counter
 const target = 26869;
-const duration = 2000; // время анимации в мс (2 сек)
-const frameRate = 60; // кадров в секунду
+const duration = 7000;
+const frameRate = 60;
 const totalFrames = Math.round(duration / (1000 / frameRate));
 const counterElement = document.getElementById("counter");
-
 let frame = 0;
-
 const counter = setInterval(() => {
   frame++;
   const progress = frame / totalFrames;
   const current = Math.round(target * easeOutQuad(progress));
   counterElement.textContent = current.toLocaleString("ru-RU");
-
   if (frame >= totalFrames) clearInterval(counter);
 }, 1000 / frameRate);
-
-// Функция замедления (ease out)
 function easeOutQuad(t) {
   return t * (2 - t);
 }
