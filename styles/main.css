@@ -372,20 +372,31 @@ header {
   text-align: center;
   margin-bottom: 40px;
 }
-
-.sources_grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.sources_grid {
+.sources_grid_wrapper {
+  overflow: hidden;
   width: 100%;
 }
+
+.sources_grid {
+  width: max-content;
+  display: flex;
+
+  animation: scroll-left 50s linear infinite;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .sources_grid .swiper-slide {
   width: 300px !important;
 }
 .sources_card {
-  width: 100%;
+  width: 300px;
   display: flex;
   align-items: center;
   height: 300px;
@@ -457,6 +468,7 @@ header {
 .roadmap_grid_top .roadmap_card {
   width: 32.5%;
 }
+
 .roadmap_card {
   box-sizing: border-box;
 
@@ -470,11 +482,6 @@ header {
   transition: all 0.4s ease;
 }
 
-.roadmap_card:hover {
-  transition: all 0.4s ease;
-  background: rgb(163, 133, 235);
-}
-
 .roadmap_card h3 {
   color: rgba(255, 255, 255, 0.1);
   font-size: 54px;
@@ -485,9 +492,10 @@ header {
   text-transform: uppercase;
   transition: all 0.4s ease;
 }
-
-.roadmap_card:hover h3 {
-  transition: all 0.4s ease;
+.roadmap_card_c {
+  background: rgb(163, 133, 235);
+}
+.roadmap_card_c h3 {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -508,21 +516,24 @@ header {
   text-align: left;
   text-transform: uppercase;
 }
-.roadmp_link {
-  display: none;
-}
 
 .roadmp_link div {
   /* White */
   background: rgb(255, 255, 255);
-  width: 52px;
-  height: 52px;
+  width: 184px;
+  height: 64px;
+  padding: 22px 20px 22px 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.roadmap_card:hover .roadmp_link {
-  display: flex;
+  justify-content: space-between;
+  /* Button/Desktop */
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .roadmap_grid .roadmap_card:last-child {
@@ -533,6 +544,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 90px;
+  gap: 24px;
 }
 .about_products {
   margin-bottom: 92px;
@@ -541,9 +553,9 @@ header {
 .about_card {
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-left: none;
+
   padding: 40px;
-  height: 584px;
+  height: 420px;
   display: flex;
   flex-direction: column;
 
@@ -882,6 +894,21 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
+.roadmp_link_mob {
+  display: none;
+}
+.roadmp_link_mob div {
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 46px;
+  background: rgb(163, 133, 235);
+  width: 100%;
+}
 
 .footer_content {
   margin-top: 40px;
@@ -962,6 +989,37 @@ header {
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
+}
+.products_list {
+  position: relative;
+}
+.active_product {
+  position: absolute;
+  padding: 40px;
+  width: 320px;
+  height: 320px;
+  background: url(../assets/images/active-bg.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -20px;
+  right: 20%;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.active_product img {
+  width: 180px;
+}
+.product_item_g:hover .active_product_g {
+  transition: all 0.4s ease;
+  opacity: 1;
+}
+
+.product_item_b:hover .active_product_b {
+  transition: all 0.4s ease;
+  opacity: 1;
 }
 
 .product_item {
@@ -1062,7 +1120,7 @@ header {
   display: none;
 }
 .mob_faq_btm,
-.footer_content,
+.footer_mob,
 .gambling_mob,
 .prod_list {
   display: none;
@@ -1247,7 +1305,7 @@ header {
   }
   .nav_wrapper {
     padding: 0;
-    padding-top: 10px;
+    padding-bottom: 16px;
   }
   .nav_menu {
     padding: 16px;
@@ -1402,6 +1460,7 @@ header {
   }
   .sources_card {
     height: 120px;
+    width: 120px;
   }
   .sources_grid .swiper-slide {
     width: 120px !important;
@@ -1446,7 +1505,7 @@ header {
     align-items: center;
     justify-content: start;
     flex-direction: row;
-    gap: 16px;
+    gap: 15px;
     border-left: none;
     border-right: none !important;
     border-top: none;
@@ -1868,5 +1927,24 @@ header {
   }
   .socials a:last-child {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .footer_desc {
+    display: none;
+  }
+  .roadmap_card_c {
+    padding: 24px 0;
+  }
+  .roadmap_card_c .roamap_link div {
+    display: none;
+  }
+  .roadmap_card_c h3 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .roadmap_card_c p {
+    color: rgb(255, 255, 255);
+  }
+  .roadmp_link_mob {
+    display: flex;
   }
 }
