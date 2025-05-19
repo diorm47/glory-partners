@@ -6,17 +6,6 @@ document.querySelectorAll(".faq_item .faq_title").forEach((title) => {
   });
 });
 
-// to top btn
-// document
-//   .getElementById("scrollToTopBtn")
-//   .addEventListener("click", function () {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: "smooth",
-//     });
-//   });
-
-
 // nav scroll width
 window.addEventListener("scroll", function () {
   const scrollTop = window.scrollY;
@@ -36,7 +25,6 @@ document.querySelectorAll(".scrollBtn").forEach((button) => {
     }
   });
 });
-
 
 // text opacity
 window.addEventListener("scroll", () => {
@@ -69,3 +57,35 @@ window.addEventListener("scroll", () => {
   });
 });
 window.dispatchEvent(new Event("scroll"));
+
+const target = 26869;
+const duration = 2000; // время анимации в мс (2 сек)
+const frameRate = 60; // кадров в секунду
+const totalFrames = Math.round(duration / (1000 / frameRate));
+const counterElement = document.getElementById("counter");
+
+let frame = 0;
+
+const counter = setInterval(() => {
+  frame++;
+  const progress = frame / totalFrames;
+  const current = Math.round(target * easeOutQuad(progress));
+  counterElement.textContent = current.toLocaleString("ru-RU");
+
+  if (frame >= totalFrames) clearInterval(counter);
+}, 1000 / frameRate);
+
+// Функция замедления (ease out)
+function easeOutQuad(t) {
+  return t * (2 - t);
+}
+
+// to top btn
+document
+  .getElementById("scrollToTopBtn")
+  .addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });

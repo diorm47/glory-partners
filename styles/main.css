@@ -113,13 +113,21 @@ button {
   align-items: center;
   gap: 8px;
 }
+.nav_right .nav_logo {
+  display: none;
+}
+.nav_right_btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
 nav {
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 22;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
 }
 header {
@@ -236,6 +244,7 @@ header {
 }
 .partners_amount p {
   color: rgb(255, 255, 255);
+  width: 112px;
   font-size: 21.33px;
   font-weight: 500;
   line-height: 32px;
@@ -524,7 +533,6 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 90px;
-  gap: 24px;
 }
 .about_products {
   margin-bottom: 92px;
@@ -533,6 +541,7 @@ header {
 .about_card {
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: none;
   padding: 40px;
   height: 584px;
   display: flex;
@@ -540,7 +549,7 @@ header {
 
   justify-content: space-between;
 }
-.about_card:nth-child(1) {
+/* .about_card:nth-child(1) {
   background: url(../assets/images/about-card-1.png);
   background-size: cover;
 }
@@ -551,9 +560,9 @@ header {
 .about_card:nth-child(3) {
   background: url(../assets/images/about-card-3.png);
   background-size: cover;
-}
+} */
 
-.about_card p {
+/* .about_card p {
   color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 500;
@@ -561,9 +570,21 @@ header {
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
+} */
+.about_card p {
+  /* Body Bold/Desktop */
+  color: rgb(255, 255, 255);
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
 }
+
 .about_card span {
-  /* Body/Desktop */
+  opacity: 0.5;
   color: rgb(255, 255, 255);
   font-family: IBM Plex Mono;
   font-size: 20px;
@@ -1037,6 +1058,18 @@ header {
   background-size: cover;
   background-position: center;
 }
+.payments_mob {
+  display: none;
+}
+.mob_faq_btm,
+.footer_content,
+.gambling_mob,
+.prod_list {
+  display: none;
+}
+.community_top h3 {
+  display: none;
+}
 
 .payment_item_high {
   width: 235px;
@@ -1104,4 +1137,724 @@ header {
 .gamble_4 {
   bottom: 0;
   right: 0;
+}
+.header_mob_btn {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .nav_wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .nav_left .nav_logo {
+    display: none;
+  }
+  .nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+  }
+  .nav_left {
+    width: 100%;
+  }
+  .nav_menu p {
+    width: auto;
+  }
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header_content,
+  .why_choose,
+  .products_top,
+  .countries_content,
+  .faq {
+    flex-direction: column;
+  }
+  .roadmap_grid_top {
+    flex-direction: column-reverse;
+  }
+  .roadmap_grid,
+  .about_grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .offer_block {
+    width: 100%;
+  }
+  .left_gr,
+  .right_gr {
+    display: none;
+  }
+  .support p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .block_title h2 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 106%;
+    letter-spacing: 0%;
+  }
+  .why_choose .block_title h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .roadmap_title h2 {
+    opacity: 1;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    filter: blur(0);
+  }
+  .products_top h2,
+  .offer_block h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .countries_text p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .payment_item {
+    width: 100%;
+  }
+  .community_top h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .header_bg {
+    display: none;
+  }
+  .nav_wrapper {
+    padding: 0;
+    padding-top: 10px;
+  }
+  .nav_menu {
+    padding: 16px;
+  }
+  .nav_menu p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  .sign_btn {
+    gap: 27px;
+  }
+  .main_btn {
+    padding: 16px 16px 16px 20px;
+    height: 52px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+  }
+  .lang_btn {
+    width: 52px;
+    height: 52px;
+    padding: 0;
+  }
+  .nav_right .nav_logo {
+    display: flex;
+  }
+  .nav_right .nav_logo img {
+    width: 120px;
+  }
+  .nav_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 16px;
+  }
+  header {
+    background: url(../assets/images/header-bg-mob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 370px;
+  }
+  .block_title h2 {
+    text-align: left;
+  }
+  .header_content {
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+  }
+  .header_content_right .block_top {
+    display: none;
+  }
+  .header_text {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .header_text p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .header_partners .join_btn {
+    display: none;
+  }
+  .header_partners {
+    height: 80px;
+    width: 100%;
+  }
+  .partners_amount p {
+    font-size: 11.4px;
+    font-weight: 500;
+    line-height: 17.1px;
+    width: 60px;
+    margin-bottom: 7px;
+  }
+  .partners_amount span {
+    font-size: 8px;
+  }
+  .header_partners_list {
+    padding-left: 22px;
+  }
+  .partners_amount {
+    padding: 0 24px;
+  }
+  .header_mob_btn {
+    width: 169px;
+    height: 46px;
+    padding: 16px 20px 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  .join_btn p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+  }
+  header {
+    padding-bottom: 40px;
+    margin-bottom: 0;
+  }
+  .why_choose {
+    padding-top: 40px;
+    background: transparent;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+  .why_choose .block_title h2 {
+    margin-bottom: 40px;
+  }
+  .circle {
+    width: 295px;
+    height: 295px;
+  }
+  .choose_right .swiper-slide {
+    width: 295px !important;
+    height: 295px !important;
+  }
+  .choose_right_wrapper {
+    height: 296px;
+    width: 100%;
+  }
+  .circle p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0%;
+    margin-bottom: 16px;
+  }
+  .circle span {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .center p {
+    margin-bottom: 24px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+  }
+  .sources_card {
+    height: 120px;
+  }
+  .sources_grid .swiper-slide {
+    width: 120px !important;
+  }
+  .sources_card p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+  }
+  .sources {
+    padding-bottom: 40px;
+  }
+  .roadmap {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .block_top p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+  }
+  .roadmap_top {
+    margin-bottom: 16px;
+  }
+  .roadmap_title br,
+  .roadmap_title h2:nth-child(4) {
+    display: none;
+  }
+  .roadmap_grid_top {
+    gap: 40px;
+  }
+  .roadmap_grid_top .roadmap_card {
+    width: 100%;
+  }
+  .roadmap_card {
+    height: auto;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    gap: 16px;
+    border-left: none;
+    border-right: none !important;
+    border-top: none;
+    background: transparent;
+  }
+  .roadmap_card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    width: 48px;
+  }
+  .roamap_link p {
+    color: rgb(128, 128, 128);
+    font-family: IBM Plex Mono;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .roadmap_grid {
+    gap: 0;
+  }
+  .roadmap_grid_top {
+    margin-bottom: 0;
+  }
+  .about_products {
+    display: none;
+  }
+  .products {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+  }
+  .products_top {
+    margin-bottom: 40px;
+  }
+  .products_top h2 {
+    margin-top: 16px;
+  }
+  .products_top br {
+    display: none;
+  }
+  .products_top h2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .products_top h2 span {
+    width: 100%;
+  }
+  .offer_block {
+    height: auto;
+    padding: 40px 24px 40px 24px;
+  }
+  .get_offer {
+    padding-top: 250px;
+  }
+  .offer_block h2 {
+    margin-bottom: 24px;
+  }
+  .offer_block h2 br {
+    display: none;
+  }
+  .offer_block p {
+    color: rgb(128, 128, 128);
+    font-family: IBM Plex Mono;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  .offer_block button {
+    padding: 16px 20px 16px 24px;
+    width: 155px;
+    height: 46px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+  .get_offer {
+    background: url(../assets/images/offer-bg-mb.png);
+    margin-bottom: 0;
+  }
+  .countries {
+    padding-top: 40px;
+  }
+  .countries .block_top {
+    margin-bottom: 24px;
+  }
+
+  .paymentsdesc {
+    display: none;
+  }
+  .payments_mob {
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .gambling {
+    margin: 0;
+  }
+  .countries {
+    padding-bottom: 40px;
+  }
+  .payment_item {
+    width: 100%;
+    height: 68px;
+  }
+  .faq {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .faq_left,
+  .faq_right {
+    width: 100%;
+  }
+  .faq_left h2 {
+    margin-bottom: 24px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .desct_faq_btm {
+    display: none;
+  }
+  .mob_faq_btm {
+    display: block;
+  }
+
+  .faq_item {
+    padding: 24px 0px 24px 0px;
+  }
+
+  .faq_title p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    width: 86%;
+  }
+  .faq_btn {
+    width: 40px;
+    height: 40px;
+  }
+  .faq_item.active .faq_title p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .faq_desc {
+    padding-bottom: 0 !important;
+  }
+  .faq_desc p {
+    color: rgb(128, 128, 128);
+    font-family: IBM Plex Mono;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .faq_item.active .faq_desc {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .mob_faq_btm {
+    margin-top: 24px;
+  }
+
+  .faq_btm p {
+    color: rgb(128, 128, 128);
+    font-family: IBM Plex Mono;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .faq_btm button {
+    width: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* White */
+    width: 254px;
+    height: 52px;
+    background: rgb(255, 255, 255);
+    padding: 16px 20px 16px 24px;
+    /* Button/Mobile */
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .support {
+    height: 200px;
+    margin-bottom: 40px;
+  }
+  .footer_wrapper {
+    padding: 0;
+  }
+  .footer_content {
+    display: block;
+  }
+  .footer_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .footer_menu p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .footer_btm_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .footer_logo img {
+    width: 90px;
+  }
+  .footer_right .main_btn {
+    width: 40px;
+    height: 40px;
+  }
+  #scrollToTopBtn {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .why_choose {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .community {
+    padding-top: 40px;
+    padding-bottom: 0;
+    background: url(../assets/images/community-gallery-img-mob.png);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+  }
+  .community_gallery {
+    display: none;
+  }
+  .community_top h3 {
+    display: flex;
+    color: rgb(128, 128, 128);
+    font-family: IBM Plex Mono;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-bottom: 308px;
+  }
+  .community_top h2 {
+    margin-bottom: 24px;
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+  }
+  .socials p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+  }
+  .socials a {
+    height: 52px;
+  }
+  .gambling_desc {
+    display: none;
+  }
+  .gambling_mob {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 80px;
+  }
+  .gambling_mob p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0%;
+    margin-bottom: 30px;
+  }
+  .gambling_mob p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .countries {
+    background: url(../assets/images/About-mob.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .products_list {
+    display: none;
+  }
+  .prod_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .prod_item {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .prod_item_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 16px;
+  }
+  .prod_item_top p {
+    color: rgb(128, 128, 128);
+    font-family: IBM Plex Mono;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .prod_item_top span {
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  .gamble_1,
+  .gamble_2 {
+    position: absolute;
+  }
+  .prod_item_btm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+  }
+  .visit_link {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 16px 16px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .visit_link p {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  nav {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) -9.052%,
+      rgb(0, 0, 0) 44.828%
+    );
+  }
+  .nav_line {
+    bottom: 0;
+    top: auto;
+  }
 }
