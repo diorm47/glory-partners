@@ -1860,8 +1860,8 @@ header {
 
   .nav_menu,
   .socials a {
-    border-left: none;
-    border-right: none;
+    border-left: none !important;
+    border-right: none !important;
   }
   .socials a {
     border-bottom: none;
