@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glory Partners</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/counter.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -71,7 +72,7 @@
               </div>
             </div>
             <div class="partners_amount">
-              <p id="counter">0</p>
+              <div class="counter" id="counter"></div>
               <span>partners</span>
             </div>
             <div class="join_btn">
@@ -698,6 +699,7 @@
     </footer>
 
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/counter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".sources_grid", {

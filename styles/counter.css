@@ -1,0 +1,68 @@
+.counter {
+  display: flex;
+}
+
+.digit-container {
+  position: relative;
+  width: 22px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.digit-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.digit-strip div {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+
+  font-size: 21.33px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 450px) {
+  .counter {
+    display: flex;
+  }
+
+  .digit-container {
+    position: relative;
+    width: 12px;
+    height: 44px;
+    overflow: hidden;
+    margin-top: -15px;
+  }
+
+  .digit-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .digit-strip div {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+
+    font-size: 11.4px;
+    font-weight: 500;
+    line-height: 17.1px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
