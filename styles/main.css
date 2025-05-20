@@ -615,7 +615,7 @@ header {
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0; z-index: 12;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
 }
 .right_gr {
@@ -624,6 +624,7 @@ header {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 12;
   background: linear-gradient(270deg, rgb(0, 0, 0), rgba(0, 0, 0, 0) 100%);
 }
 .community_top {
@@ -1040,7 +1041,67 @@ header {
   text-align: left;
   text-transform: uppercase;
 }
+.community_car {
+  width: 100%;
+  margin-top: -120px;
+}
+.community_card {
+  position: relative;
+}
+.c1 {
+  z-index: 14;
+}
+.c2 {
+  z-index: 13;
+}
+.c3 {
+  z-index: 12;
+}
+.c4 {
+  z-index: 11;
+}
+.c5 {
+  z-index: 10;
+}
+.c6 {
+  z-index: 9;
+}
+.c7 {
+  z-index: 8;
+}
+.c8 {
+  z-index: 7;
+}
+.c9 {
+  z-index: 6;
+}
+.c10 {
+  z-index: 5;
+}
+.c11 {
+  z-index: 4;
+}
+.c12 {
+  z-index: 3;
+}
+.c13 {
+  z-index: 2;
+}
+.c14 {
+  z-index: 1;
+}
 
+.community_card img {
+  width: 100%;
+}
+.community_car .swiper-slide {
+  width: 360px !important;
+
+  margin-right: -90px;
+}
+.mob_socials {
+  display: none;
+}
 .product_item_right {
   width: 65%;
   display: flex;
@@ -1245,7 +1306,13 @@ header {
   }
   .left_gr,
   .right_gr {
+ width: 120px;
+  }
+  .community_top .socials {
     display: none;
+  }
+  .mob_socials {
+    display: flex;
   }
   .support p {
     font-size: 20px;
@@ -1767,10 +1834,12 @@ header {
   .community {
     padding-top: 40px;
     padding-bottom: 0;
-    background: url(../assets/images/community-gallery-img-mob-2.png);
-    background-position: center;
-    background-size: cover;
+  
     margin-bottom: 0;
+  }
+  .community_car {
+    margin-top: 0;
+    margin-bottom: 36px;
   }
   .community_gallery {
     display: none;
@@ -1786,7 +1855,7 @@ header {
     text-align: center;
     text-transform: uppercase;
     justify-content: center;
-    margin-bottom: 308px;
+    margin-bottom: 32px;
   }
   .community_top h2 {
     margin-bottom: 24px;
@@ -1947,4 +2016,10 @@ header {
   .roadmp_link_mob {
     display: flex;
   }
+
+  .community_car .swiper-slide {
+  width: 100px !important;
+
+  margin-right: -30px;
+}
 }

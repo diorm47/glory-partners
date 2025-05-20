@@ -524,10 +524,92 @@
         </div>
       </div>
       <div class="left_gr"></div>
-      <div class="community_gallery">
+      <!-- <div class="community_gallery">
         <img src="./assets/images/community-gallery-img.png" alt="" />
+      </div> -->
+
+      <div class="swiper community_car">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="community_card c1">
+              <img src="./assets/images/community/1.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c2">
+              <img src="./assets/images/community/2.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c3">
+              <img src="./assets/images/community/3.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c4">
+              <img src="./assets/images/community/4.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c5">
+              <img src="./assets/images/community/5.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c6">
+              <img src="./assets/images/community/6.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c7">
+              <img src="./assets/images/community/7.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c8">
+              <img src="./assets/images/community/1.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c9">
+              <img src="./assets/images/community/2.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c10">
+              <img src="./assets/images/community/3.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c11">
+              <img src="./assets/images/community/4.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c12">
+              <img src="./assets/images/community/5.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c13">
+              <img src="./assets/images/community/6.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="community_card c14">
+              <img src="./assets/images/community/7.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="right_gr"></div>
+
+      <div class="socials mob_socials">
+        <a href="#"><p>youtube</p></a>
+        <a href="#"><p>instagram</p></a>
+        <a href="#"><p>telegram</p></a>
+      </div>
     </section>
 
     <section class="faq container">
@@ -777,6 +859,18 @@
             direction: "vertical",
           },
         },
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper3 = new Swiper(".community_car", {
+          loop: true,
+          slidesPerView: 7,
+          spaceBetween: 0,
+          navigation: false,
+          pagination: false,
+        });
       });
     </script>
   </body>
