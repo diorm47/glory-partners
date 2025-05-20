@@ -615,7 +615,8 @@ header {
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0; z-index: 12;
+  top: 0;
+  z-index: 12;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%);
 }
 .right_gr {
@@ -1261,6 +1262,37 @@ header {
   display: none;
 }
 
+.container_s {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.container_s h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 36px;
+}
+.container_s p {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: IBM Plex Mono;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.container_s h3 {
+  line-height: 20px;
+  font-size: 28px;
+  font-family: IBM Plex Mono;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
 @media only screen and (max-width: 450px) {
   .nav_wrapper {
     flex-direction: column;
@@ -1306,7 +1338,7 @@ header {
   }
   .left_gr,
   .right_gr {
- width: 120px;
+    width: 120px;
   }
   .community_top .socials {
     display: none;
@@ -1834,7 +1866,7 @@ header {
   .community {
     padding-top: 40px;
     padding-bottom: 0;
-  
+
     margin-bottom: 0;
   }
   .community_car {
@@ -2018,8 +2050,22 @@ header {
   }
 
   .community_car .swiper-slide {
-  width: 100px !important;
+    width: 100px !important;
 
-  margin-right: -30px;
-}
+    margin-right: -30px;
+  }
+  .container_s {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .container_s h2 {
+    font-size: 22px;
+  }
+  .container_s p {
+    font-size: 16px;
+  }
+  .container_s h3 {
+    font-size: 20px;
+    line-height: 130%;
+  }
 }

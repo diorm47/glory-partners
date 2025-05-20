@@ -26,6 +26,17 @@ document.querySelectorAll(".scrollBtn").forEach((button) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const hash = window.location.hash;
+  if (hash) {
+    const targetElement = document.querySelector(hash);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+});
+
+
 // text opacity
 window.addEventListener("scroll", () => {
   const container = document.querySelector(".countries_text");
