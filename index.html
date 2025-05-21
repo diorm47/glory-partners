@@ -116,7 +116,6 @@
                 <span>Paid to partners</span>
               </div>
             </div>
-         
           </div>
         </div>
       </div>
@@ -228,53 +227,56 @@
         <div class="block_top">
           <p>| How it works |</p>
         </div>
-      </div>
-      <div class="roadmap_grid_top">
-        <div class="roadmap_card">
-          <h3>01</h3>
-          <div class="roamap_link">
-            <p>Create an account</p>
-          </div>
-        </div>
         <div class="roadmap_title">
           <h2>
-            Easy way to <br />
-            start earnings
-          </h2>
-          <br />
-          <br />
-          <h2>
-            with Glory <br />
-            Partners
+            Easy way to start <br />
+            earnings <br />
+            <span> with Glory Partners</span>
           </h2>
         </div>
       </div>
-      <div class="roadmap_grid">
-        <div class="roadmap_card">
-          <h3>02</h3>
-          <div class="roamap_link">
-            <p>Get your affiliate link</p>
+
+      <div class="roadmap_grids" id="target">
+        <div class="roadmap_grid">
+          <div class="roadmap_card">
+            <h3>01</h3>
+            <div class="roamap_link">
+              <p>Create an account</p>
+            </div>
           </div>
         </div>
-        <div class="roadmap_card">
-          <h3>03</h3>
-          <div class="roamap_link">
-            <p>Attract users to our products</p>
+        <div class="roadmap_grid mb24px">
+          <div></div>
+          <div class="roadmap_card">
+            <h3>02</h3>
+            <div class="roamap_link">
+              <p>Get your affiliate link</p>
+            </div>
           </div>
         </div>
-        <div class="roadmap_card roadmap_card_c">
-          <h3>04</h3>
-          <div class="roamap_link">
-            <p>Earn up to 45% lifetime revenue share</p>
-            <a href="#" class="roadmp_link">
-              <div>
-                Sign Up
-                <img src="./assets/icons/link-dark.svg" alt="" />
-              </div>
-            </a>
+        <div class="roadmap_grid">
+          <div></div>
+          <div class="roadmap_card">
+            <h3>03</h3>
+            <div class="roamap_link">
+              <p>Attract users to our products</p>
+            </div>
+          </div>
+          <div class="roadmap_card roadmap_card_c">
+            <h3>04</h3>
+            <div class="roamap_link">
+              <p>Earn up to 45% lifetime revenue share</p>
+              <a href="#" class="roadmp_link">
+                <div>
+                  Sign Up
+                  <img src="./assets/icons/link-dark.svg" alt="" />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
       <a href="#" class="roadmp_link roadmp_link_mob">
         <div>
           Join now
@@ -282,6 +284,35 @@
         </div>
       </a>
     </section>
+
+    <script>
+      const block = document.getElementById("target");
+      const title = document.querySelector(".roadmap_title");
+      let lastScrollY = window.scrollY;
+      let hasShifted = false;
+
+      window.addEventListener("scroll", () => {
+        const rect = block.getBoundingClientRect();
+        const triggerOffset = 1000;
+
+        const scrollingDown = window.scrollY > lastScrollY;
+        const scrollingUp = window.scrollY < lastScrollY;
+
+        if (!hasShifted && scrollingDown && rect.top < triggerOffset) {
+          block.classList.add("shifted");
+          title.classList.add("roadmap_title_sec");
+          hasShifted = true;
+        }
+
+        if (hasShifted && scrollingUp && rect.top > 200) {
+          block.classList.remove("shifted");
+          title.classList.remove("roadmap_title_sec");
+          hasShifted = false;
+        }
+
+        lastScrollY = window.scrollY;
+      });
+    </script>
 
     <section class="about_products container" id="about">
       <div class="block_top">

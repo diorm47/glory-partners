@@ -433,24 +433,32 @@ header {
   padding-top: 160px;
   padding-bottom: 142px;
   margin-bottom: 96px;
+  position: relative;
 }
-.roadmap_top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.roadmap_top .block_top {
   margin-bottom: 90px;
 }
 .roadmap_title h2 {
-  /* H2/Desktop */
   color: rgb(255, 255, 255);
   font-size: 90px;
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0%;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
-  opacity: 0.5;
+  margin-bottom: 160px;
+  transition: all 1s ease;
+}
+.roadmap_title_sec h2 {
+  opacity: 0.8;
   filter: blur(2px);
+  transition: all 1s ease;
+}
+.roadmap_top .block_top {
+  width: 100%;
+}
+.roadmap_top .block_top p {
+  text-align: center;
 }
 
 .roadmap_grid {
@@ -473,13 +481,23 @@ header {
   box-sizing: border-box;
 
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.03);
-  height: 450px;
+  backdrop-filter: blur(50px);
+  background: rgba(0, 0, 0, 0.1);
+  height: 584px;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 0.4s ease;
+}
+.mb24px {
+  margin-bottom: 24px;
+}
+.roadmap_grids {
+  transition: all 1s ease-in;
+  will-change: transform;
+}
+.shifted {
+  margin-top: -600px;
 }
 
 .roadmap_card h3 {
@@ -2067,5 +2085,21 @@ header {
   .container_s h3 {
     font-size: 20px;
     line-height: 130%;
+  }
+  .shifted {
+    margin: 0;
+  }
+  .roadmap_top .block_top {
+    margin-bottom: 24px;
+  }
+  .roadmap_title h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .roadmap_title h2 span {
+    display: none;
+  }
+  .mb24px {
+    margin: 0;
   }
 }
