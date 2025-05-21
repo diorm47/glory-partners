@@ -477,7 +477,8 @@ header {
 }
 .roadmap_top {
   position: sticky;
-  top: 0;
+    top: 50%;
+  transform: translateY(-50%);
 }
 .roadmap_top .block_top {
   margin-bottom: 90px;
