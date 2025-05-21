@@ -266,6 +266,9 @@ header {
   text-transform: uppercase;
 }
 
+.header_partners a {
+  height: 100%;
+}
 .join_btn {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   /* White */
@@ -681,7 +684,7 @@ header {
 }
 .community_top {
   position: relative;
-  z-index: 2;
+  z-index: 13;
 }
 
 .community_top h2 {
@@ -938,14 +941,8 @@ header {
   justify-content: center;
 }
 
-.support p {
-  color: rgb(255, 255, 255);
-  font-size: 110px;
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  text-transform: uppercase;
+.support img {
+  width: 100%;
 }
 .roadmp_link_mob {
   display: none;
@@ -1000,6 +997,7 @@ header {
 .footer_right .sign_btn {
   width: 176px;
   justify-content: space-between;
+  gap: 0;
 }
 
 .footer_btm {
@@ -1397,12 +1395,7 @@ header {
   .mob_socials {
     display: flex;
   }
-  .support p {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
+
   .block_title h2 {
     font-size: 36px;
     font-weight: 500;
