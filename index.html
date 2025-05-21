@@ -509,35 +509,6 @@
       </a>
     </section>
 
-    <script>
-      const block = document.getElementById("target");
-      const title = document.querySelector(".roadmap_title");
-      let lastScrollY = window.scrollY;
-      let hasShifted = false;
-
-      window.addEventListener("scroll", () => {
-        const rect = block.getBoundingClientRect();
-        const triggerOffset = 1000;
-
-        const scrollingDown = window.scrollY > lastScrollY;
-        const scrollingUp = window.scrollY < lastScrollY;
-
-        if (!hasShifted && scrollingDown && rect.top < triggerOffset) {
-          block.classList.add("shifted");
-          title.classList.add("roadmap_title_sec");
-          hasShifted = true;
-        }
-
-        if (hasShifted && scrollingUp && rect.top > 200) {
-          block.classList.remove("shifted");
-          title.classList.remove("roadmap_title_sec");
-          hasShifted = false;
-        }
-
-        lastScrollY = window.scrollY;
-      });
-    </script>
-
     <section class="about_products container" id="about">
       <div class="block_top">
         <p>| about our products |</p>
@@ -1080,9 +1051,37 @@
         </div>
       </div>
     </footer>
+    <script>
+      const block = document.getElementById("target");
+      const title = document.querySelector(".roadmap_top");
+      let lastScrollY = window.scrollY;
+      let hasShifted = false;
 
+      window.addEventListener("scroll", () => {
+        const rect = block.getBoundingClientRect();
+        const triggerOffset = 1000;
+
+        const scrollingDown = window.scrollY > lastScrollY;
+        const scrollingUp = window.scrollY < lastScrollY;
+
+        if (!hasShifted && scrollingDown && rect.top < triggerOffset) {
+          block.classList.add("shifted");
+          title.classList.add("roadmap_title_sec");
+          hasShifted = true;
+        }
+
+        if (hasShifted && scrollingUp && rect.top > triggerOffset) {
+          block.classList.remove("shifted");
+          title.classList.remove("roadmap_title_sec");
+          hasShifted = false;
+        }
+
+        lastScrollY = window.scrollY;
+      });
+    </script>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/counter.js"></script>
+    <!-- <script src="./scripts/scroll.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>

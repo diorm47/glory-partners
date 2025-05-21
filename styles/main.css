@@ -16,6 +16,7 @@
 body {
   background: rgb(0, 0, 0);
   font-family: "DrukWide", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -474,6 +475,10 @@ header {
   margin-bottom: 96px;
   position: relative;
 }
+.roadmap_top {
+  position: sticky;
+  top: 0;
+}
 .roadmap_top .block_top {
   margin-bottom: 90px;
 }
@@ -493,6 +498,7 @@ header {
   filter: blur(2px);
   transition: all 1s ease;
 }
+
 .roadmap_top .block_top {
   width: 100%;
 }
@@ -535,8 +541,16 @@ header {
   transition: all 1s ease-in;
   will-change: transform;
 }
-.shifted {
-  margin-top: -600px;
+
+.lock-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.scroll_section {
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .roadmap_card h3 {
@@ -618,28 +632,7 @@ header {
 
   justify-content: space-between;
 }
-/* .about_card:nth-child(1) {
-  background: url(../assets/images/about-card-1.png);
-  background-size: cover;
-}
-.about_card:nth-child(2) {
-  background: url(../assets/images/about-card-2.png);
-  background-size: cover;
-}
-.about_card:nth-child(3) {
-  background: url(../assets/images/about-card-3.png);
-  background-size: cover;
-} */
 
-/* .about_card p {
-  color: rgb(255, 255, 255);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 28px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-transform: uppercase;
-} */
 .about_card p {
   /* Body Bold/Desktop */
   color: rgb(255, 255, 255);
@@ -1415,11 +1408,11 @@ header {
     line-height: 106%;
     letter-spacing: 0%;
   }
-   .why_choose .block_title {
+  .why_choose .block_title {
     display: flex;
     align-items: start;
     justify-content: space-between;
-   }
+  }
   .why_choose .block_title h2 {
     font-size: 20px;
     font-weight: 500;
@@ -1427,9 +1420,9 @@ header {
     letter-spacing: 0%;
     text-align: left;
   }
-    .why_choose .block_title h2 br {
-      display: none;
-    }
+  .why_choose .block_title h2 br {
+    display: none;
+  }
   .roadmap_title h2 {
     opacity: 1;
     font-size: 20px;
